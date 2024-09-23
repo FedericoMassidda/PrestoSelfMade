@@ -1,0 +1,56 @@
+/* colors */
+:root{
+    --cardBorder: #ffe165;
+}
+/* logo and user buttons */
+.btnSizeCustom{
+    width: 100%;
+}
+
+/* categories */
+.categoriesWrapper{
+    /* display */
+    display: flex;
+    justify-content: space-between;
+
+    /* box model */
+    margin-top: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.categoryItem{
+    list-style: none;
+}
+
+/* login form */
+.FormWrapper{
+    padding: 30px;
+    border: 1px solid rgb(222, 226, 230);
+    border-radius: 20px;
+}
+
+/* create article form */
+.createArticleWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.createInput{
+    width: 30%;
+}
+.selectInput{
+    height: min-content;
+}
+
+/* card */
+.cardWrapper{
+    /* box model */
+    border: 8px solid var(--cardBorder);
+    border-radius: 16px;
+    padding: 15px;
+
+    /* display */
+    display: flex;
+    flex-direction: column;
+}
