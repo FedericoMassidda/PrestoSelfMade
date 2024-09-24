@@ -2,6 +2,9 @@
 :root{
     /* card color */
     --cardBorder: #ffe165;
+    --backgroundColor1: #2f2f2f;
+    --backgroundColor2: #585858;
+    --backgroundColor3: #d1d1d1;
 }
 
 /* card color class */
@@ -57,6 +60,16 @@
     background-blend-mode: multiply;
     background-size: cover;
 }
+/* body background */
+body{
+    background-color: var(--backgroundColor1); 
+    background-image: 
+        linear-gradient(135deg, transparent 25%, var(--backgroundColor2) 25%, var(--backgroundColor2) 50%, transparent 50%, transparent 75%, var(--backgroundColor2) 75%),
+        linear-gradient(225deg, transparent 25%, var(--backgroundColor2) 25%, var(--backgroundColor2) 50%, transparent 50%, transparent 75%, var(--backgroundColor2) 75%);
+    background-size: 90px 90px;
+    background-position: 0 0, 30px 30px; 
+
+}
 
 /* logo and user buttons */
 .btnSizeCustom{
@@ -82,6 +95,7 @@
 
 /* login form */
 .FormWrapper{
+    background-color: var(--backgroundColor3);
     padding: 30px;
     border: 1px solid rgb(222, 226, 230);
     border-radius: 20px;
