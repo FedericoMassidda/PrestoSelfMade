@@ -8,7 +8,7 @@
         </div>
         <p class="ms-1">{{$article->description}}</p>
         <div class="d-flex align-items-center justify-content-between mt-2">
-            <p>Articolo di: {{Auth::user()->name}}</p>
+            <p>Articolo di: {{$article->user->name}}</p>
         </div>
     </div>
 </div>

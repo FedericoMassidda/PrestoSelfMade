@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Category;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -22,9 +23,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // sharing categories in all views
         if(Schema::hasTable('categories')){
             $categories = Category::all();
             View::share('categories', $categories);
         }
+        // paginations
+        Paginator::useBootstrap();
     }
 }
